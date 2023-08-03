@@ -25,7 +25,7 @@ export const XrHitCube = () => {
 			camera.position.set(0, 0, 1)
 		}
 	})
-	useHitTest((hitMatrix, hit) => {
+	useHitTest((hitMatrix, _hit) => {
 		if (!ringRef.current) return
 		hitMatrix.decompose(
 			ringRef.current.position,

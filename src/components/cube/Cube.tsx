@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 export const Cube = () => {
 	const cubeRef = useRef<THREE.Mesh>(null)
-	useFrame((state, delta) => {
+	useFrame((_state, delta) => {
 		if (!cubeRef.current) return
 		cubeRef.current.rotation.x += delta
 		cubeRef.current.rotation.y += delta
