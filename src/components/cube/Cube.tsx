@@ -11,8 +11,8 @@ export const Cube = () => {
 	return (
 		<>
 			<mesh ref={cubeRef}>
-				<boxGeometry args={[0.2, 0.2, 0.2]} />
-				<meshStandardMaterial color={'hotpink'} />
+				<boxGeometry args={[2, 2, 2]} />
+				<meshStandardMaterial color={'purple'} />
 			</mesh>
 		</>
 	)
